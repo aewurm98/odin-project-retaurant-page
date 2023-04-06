@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+#tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin: 15px;
+}
+
+#home,
+#menu,
+#contact {
+  padding: 15px;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  border-radius: 3px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+#home.active,
+#menu.active,
+#contact.active {
+  background-color: white;
+  color: black;
+  cursor: default;
+}
+
+#content {
+  flex: 1;
+  padding: 30px;
+  background-image: url('./hero-image-4.jpg');
+  background-size: 120%;
+  /* background-repeat: no-repeat; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+}
+
+img {
+  max-height: 50vh;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+#modal {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 10px;
+}
+
+#exit {
+  width: 2rem;
+  aspect-ratio: 1 / 1;
+  text-align: center;
+  line-height: 2rem;
+  vertical-align: middle;
+  position: relative;
+  top: -2.5rem;
+  left: -58%;
+  background-color: black;
+  color: white;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#capture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+
+#note {
+  color: black;
+}
+
+#phone {
+  padding: 15px;
+  width: 80%;
+}
+
+#signup {
+  cursor: pointer;
+  padding: 15px;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+}
+
+#note,
+#phone,
+#signup {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#footer {
+  color: white;
+  background-color: black;
+  min-height: 2rem;
+}
+
+#footer-text {
+  line-height: 2rem;
+  vertical-align: middle;
+}
+
+/* .home-header {
+}
+
+.home-item {
+}
+
+.menu-header {
+}
+
+.menu-item {
+}
+
+.contact-header {
+}
+
+.contact-item {
+} */
